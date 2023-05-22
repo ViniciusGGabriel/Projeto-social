@@ -4,6 +4,8 @@
     --color-bg: rgb(68, 68, 68);
     --color-bg1: #255;
     --color-bg2: rgba(111, 93, 194, 0.411);
+    --color-bg3: rgba(255, 255, 255, 0.712);
+    --shadow-bg: rgba(175, 173, 173, 0.514);
     --color-txt: white;
     --font-family: 'Oswald', sans-serif;
 }
@@ -48,4 +50,22 @@ iframe#tela {
     left: 22px;
     height: 471px;
     width: 269px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px var(--shadow-bg);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid var(--color-bg3);
+    transform: translate(-3px, -3px);
+    transition: .3s;
 }
